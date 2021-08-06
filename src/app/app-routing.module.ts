@@ -12,8 +12,10 @@ import { WeddingsComponent } from './weddings/weddings.component';
 
 const routes: Routes = [
   { path:'accomodation' , component: AccomodationComponent  },
-  { path: 'celebration',component : CelebrationsComponent},
+  { path: 'celebrations',component : CelebrationsComponent},
   { path:'food-beverage',component : FoodBeverageComponent},
+  { path: 'foodandbeverage',redirectTo:'food-beverage',
+    pathMatch:'full'},  
   { path:'lifestyle' ,component : LifestyleComponent},
   { path:'offers' , component : OffersComponent},
   { path:'weddings' , component: WeddingsComponent},

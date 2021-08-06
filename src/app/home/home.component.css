@@ -1,0 +1,22 @@
+.container{
+    background: url(/assets/images/hot2.jpg) no-repeat;
+    height: 100vh;
+}
+.book-now-container{
+    padding: 50px 115px;
+
+}
+.book-now-button{
+
+    width: 170px;
+    color: white;
+    border: 2px white solid;
+    text-transform: uppercase;
+}
+.trip{
+    font-family: 'Rubik',sans-serif;
+}
+
+.header-container {
+    height: 80vh;
+}

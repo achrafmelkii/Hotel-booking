@@ -1,13 +1,35 @@
-<nav mat-tab-nav-bar>
+<div class="navtabs-container">
+
+<nav mat-tab-nav-bar fxLayout fxFlex fxLayoutAlign="center center">
     <span class="toolbar-flex"></span>
-    <mat-tab-group>
-        <mat-tab label="helllo 1"></mat-tab>
-        <mat-tab label="helllo 2"></mat-tab>
-        <mat-tab label="helllo 3"></mat-tab>
-        <mat-tab label="helllo 4"></mat-tab>
-        <mat-tab label="helllo 5"></mat-tab>
-        <mat-tab label="helllo 6"></mat-tab>
+    <a mat-tab-link routerLink="/"
+                    routerLinkActive
+                    #Home="routerLinkActive"
+                    [active]="Home.isActive"> Home</a>
+    <a mat-tab-link routerLink="/accomodation"
+         routerLinkActive
+        #accomodation="routerLinkActive"
+        [active]="accomodation.isActive"> Accomodation</a>  
+
+    <a mat-tab-link routerLink="/offers"
+         routerLinkActive
+        #offers="routerLinkActive"
+        [active]="offers.isActive"> Offers</a>  
         
-    </mat-tab-group>
+    <a mat-tab-link routerLink="/foodandbeverage"
+         routerLinkActive
+        #foodandbeverage="routerLinkActive"
+        [active]="foodandbeverage.isActive"> Food And Berverages</a>  
+        
+    <a mat-tab-link routerLink="/lifestyle"
+        routerLinkActive
+       #lifestyle="routerLinkActive"
+       [active]="lifestyle.isActive"> Lifestyle</a> 
+
+    <a mat-tab-link routerLink="/celebrations"
+       routerLinkActive
+      #celebrations="routerLinkActive"
+      [active]="celebrations.isActive"> Celebrations</a> 
     <span class="toolbar-flex"></span>
 </nav>
+</div>

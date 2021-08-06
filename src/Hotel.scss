@@ -1,0 +1,134 @@
+
+// @use '~@angular/material' as mat;   
+
+// @include mat.core();
+
+// $Hotel-primary: mat.define-palette(mat.$indigo-palette, 500);
+// $Hotel-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+
+// $Hotel-warn: mat.define-palette(mat.$red-palette);
+// $Hotel: mat.define-light-theme((
+//  color: (
+//    primary: $Hotel-primary,
+//    accent: $Hotel-accent,
+//    warn: $Hotel-warn,
+//  )
+// ));
+   
+// @include mat.core-theme($Hotel);
+
+// @include mat.button-theme($Hotel);
+@import '~@angular/material/theming';
+@include mat-core();
+
+
+
+$Hot-primary: (
+    50 : rgb(232, 234, 246),
+    100 : rgb(197, 203, 233),
+    200 : rgb(159, 168, 218),
+    300 : #7985cb,
+    400 : #5c6bc0,
+    500 : rgba(63, 81, 181,0.6),
+    600 : #394aae,
+    700 : #3140a5,
+    800 : #29379d,
+    900 : #1b278d,
+    A100 : #c6cbff,
+    A200 : #939dff,
+    A400 : #606eff,
+    A700 : rgb(71, 87, 255),
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #ffffff,
+        A700 : #ffffff,
+    )
+);
+
+
+$Hot-accent: (
+  50 : #e5f4f3,
+  100 : #bee4e1,
+  200 : #93d3cd,
+  300 : #67c1b8,
+  400 : #47b3a9,
+  500 : #26a69a,
+  600 : #229e92,
+  700 : #1c9588,
+  800 : #178b7e,
+  900 : #0d7b6c,
+  A100 : #adfff3,
+  A200 : #7affec,
+  A400 : #47ffe4,
+  A700 : rgba(45, 255, 224,0.6),
+  contrast: (
+      50 : #000000,
+      100 : #000000,
+      200 : #000000,
+      300 : #000000,
+      400 : #000000,
+      500 : #ffffff,
+      600 : #ffffff,
+      700 : #ffffff,
+      800 : #ffffff,
+      900 : #ffffff,
+      A100 : #000000,
+      A200 : #000000,
+      A400 : #000000,
+      A700 : #000000,
+    )
+);
+
+
+$typography-configuration: mat-typography-config(
+  $font-family: 'rubik, sans-serif',
+  $display-4: mat-typography-level(112px, 112px, 300),
+  $display-3: mat-typography-level(56px, 56px, 400),
+  $display-2: mat-typography-level(45px, 48px, 400),
+  $display-1: mat-typography-level(34px, 34px, 400),
+  $headline: mat-typography-level(100px, 32px, 400),
+  $title: mat-typography-level(61px, 32px, 500),
+  $subheading-2: mat-typography-level(48.77px, 0.25px, 400),
+  $subheading-1: mat-typography-level(34.5px, 0.25px, 400),
+  $body-2: mat-typography-level(14.22px, 0.25px, 500),
+  $body-1: mat-typography-level(16.26px, 0.5px, 400),
+  $caption: mat-typography-level(12.2, 1.25px, 400),
+  $button: mat-typography-level(14.22, 1.25px, 500),
+  $input: mat-typography-level(inherit, 1.125, 400)
+);
+
+
+
+
+$Hotel-primary: mat-palette($Hot-primary,500);
+$Hotel-accent: mat-palette($Hot-accent, A700,400,700);
+
+$Hotel-warn: mat-palette($mat-red);
+
+$Hotel: mat-light-theme(
+  $Hotel-primary,
+  $Hotel-accent,
+  $Hotel-warn
+ );
+ @include angular-material-theme($Hotel);
+
+
+
+ .navtabs-container{
+   background-color: mat-color($Hotel-accent);
+ }
+
+
+ 
+
